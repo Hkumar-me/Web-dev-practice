@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+html, body{
+    width: 100%;
+    height: 100%
+    
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+#main .nav{
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#main .nav .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+#main .nav .links{
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#main .nav h1{
+    font-size: 20px;
+}
+#main .nav .links a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px
+}
+#main .nav i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.502);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #000;
+}
+#main .nav .links .active::before{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#main .mbody{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 40%;
+}
+#main .mbody .number{
+    display: flex;
+}
+#main .mbody h1{
+    font-size: 5vw;
+}
+#main .mbody h4{
+    color: #fff;
+}
+#main .description {
+    display: flex;
+    gap: 10px;
+}
+#main .description .line{
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+}
+#main .description .text{
+margin-top: -5px;
+width: 70%;
+}
+#main .plusBox{
+    width: 5%;
+    height: 24%;
+    background-color: #000000;
+    position: absolute;
+    right: -5%;
+    top: -24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#main .btmBox{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 200px;
+    background-color: #fff;
+    color: #000;
+}
+
+#main .btmBox .btmText h2, h4{
+    color: #000;
+}
+#main .btmBox .btmText h4{
+    opacity: 0.7;
+}

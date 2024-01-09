@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Salsa', cursive;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1520114878144-6123749968dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+}
+
+#main #left {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    background-color: #00000048;
+}
+
+#main .nav {
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+#main .nav .menu {
+    display: flex;
+    gap: 60px;
+}
+
+#main .nav .menu a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#main #left .lefttext {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 80%;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+#main #left .lefttext .entries:nth-child(2) .entry h3 {
+    font-size: 100px;
+}
+
+#main #left .lefttext .entries {
+    display: flex;
+    gap: 20px;
+}
+
+#main #left .lefttext .entries .entry h3 {
+    font-size: 30px;
+    border-bottom: 2px solid #fff;
+}
+
+#main #right {
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+#main #right .righttext {
+    position: absolute;
+    top: 40%;
+    padding: 40px;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+#main #right .righttext h1 {
+    font-size: 90px;
+}
+
+#main #right .righttext h4 {
+    font-size: 40px;
+}
+
+#main #right .righttext .input input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+#main #right .righttext .input {
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+#main .cright {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+
+@media (max-width : 500px){
+    #main {
+        background-image: url("https://images.unsplash.com/photo-1536951599914-a6272a52135b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+}

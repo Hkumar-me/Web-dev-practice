@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Voyage;
+    src: url(../fonts/voyage-regular.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height:100%;
+    background-color: pink;
+}
+#main .maintext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+#main .maintext h1{
+    font-size: 7vw;
+    font-family: "Voyage";
+    color: #fff;
+    user-select: none;
+    font-weight: 200;
+}
+#main .maintext h4{
+    font-size: 4vw;
+    font-family: "Voyage";
+    color: #fff;
+    user-select: none;
+    font-weight: 100;
+}
+.left{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.left .centerImg{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    background-image: url(https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: ce nter;
+}
+.left .centerImg .textOnImg{
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.left .centerImg .textOnImg .toiLeft{
+    width: 10%;
+}
+.left .centerImg .textOnImg .toiLeft h4{
+    margin-bottom: 20px;
+}
+.left .centerImg .textOnImg .toiRight{
+    width: 70% ;
+}
+.left .centerImg .textOnImg .toiRight p{
+    font-weight: 900;
+    opacity: 0.7;
+}
+.left .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.left .nav .navtext{
+    display: flex;
+    gap: 40px;
+}
+.left .nav .title h2{
+    color: #fff;
+}
+.left .nav .navtext a{
+    text-decoration: none;
+    color: #fff;
+}
+.left .scroll{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -30px;
+    left: 10%;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+}
+.left .scroll .line{
+    width:150px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+.left .scroll h3{
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 20px;
+}
+.center{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-image:url(https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom;
+}
+.center .card{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    right: -10%;
+    bottom: 10%;
+    display: flex;
+}
+.center .card .cicons{
+    width: 20%;
+    height: 100%;
+    background-color: #fff5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.center .card .cicons i{
+    font-size: 20px;
+}
+.center .card .cimg{
+    width: 80%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1499842790329-14db82033291?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.right{
+    width: 10%;
+    height: 100%;
+}
+.right .relem{
+    width: 100%;
+    height: 70%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right .relem i{
+    margin-top: 30px;
+    text-align: center;
+}
+.right .relem .rnav{
+    display: flex;
+    gap: 10px;
+    transform: translateY(-1300%) rotate(90deg);
+    
+}
+.right .relem .rnav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
