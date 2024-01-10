@@ -1,3 +1,9 @@
+@font-face {
+    font-family: voyage;
+    src: url(../fonts/voyage-regular.otf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,26 +20,108 @@ html,body{
 #home{
     width: 100%;
     min-height:90vh;
-    background-color: bisque;
     display: flex;
+    background-color: black;
 }
 .nav{
     width: 100%;
+    padding: 20px;
     min-height: 10vh;
-    background-color: #2C3335;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.nav .title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: voyage;
+    font-weight: 700;
+}
+.nav .links{
+    display: flex;
+    gap: 30px;
+}
+.nav .links a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.nav .lgbtn{
+    width: 40px;
+    height:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 10px;
+    cursor: pointer;
+}
+
 .left{
     width: 30%;
     min-height: inherit;
-    background-color: #7B8788;
+    position: relative;
+}
+.left .text{
+    position: absolute;
+    right: -30%;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 30px;
+    mix-blend-mode: difference;
+    color: #fff;
+    
+}
+.left .text .lftbtn{
+    width: 30%;
+    padding: 10px;
+}
+.left .text h1{
+    font-size: 4vw;
+    white-space: nowrap;
+    mix-blend-mode: difference;
+}
+.left .text p{
+    font-size: 14px;
+    width: 70%;
 }
 .center{
     width: 40%;
     min-height: inherit;
-    background-color: #99AAAB;
+    background-image: url(https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
 }
 .right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #fff;
     width: 30%;
     min-height: inherit;
-    background-color: #616C6F;
+    padding: 5vw;
 }
+.right .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffffc8;
+    border-radius: 50%;
+
+}
+.right i{
+    color: #000;
+}
+.right .locations .loc h4{
+    font-size: 3vw;
+}
+.right .locations .loc h6{
+    font-size: 1vw;
+}
+
