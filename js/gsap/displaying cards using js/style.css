@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#card{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 20vw;
+    min-height: 25vw;
+    background-color: white;
+}
+#main .img{
+    margin-bottom: 2vw;
+    width: 6vw;
+    height: 6vw;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+
+}
+#card h1{
+    margin-bottom: 1vw;
+}
+#card #Stranger{
+    color: red;
+}
+#card #Friends{
+    color: green;
+}
+#card h2{
+    margin-bottom: 0.5vw;
+}
+#card p{
+    margin-bottom: 1vw;
+}
+#card button{
+    padding: 8px 15px;
+    font-size: 1vw;
+    background-color: rgba(201, 177, 177, 0.607);
+    border: none;
+    border-radius: 10px;
+}
+#card .red{
+    background-color: red;
+}
+#card .green{
+    background-color: green;
+}
