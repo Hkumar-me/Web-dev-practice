@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#main .left{
+    padding: 2vw;
+    position: relative;
+    width: 30%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(234, 11, 33, 0.811);
+}
+#main .left .ltext{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    width: 80%;
+    top: 20%;
+}
+#main .left .lbtm{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    background-color: #fff;
+    color: #000;
+    width: 90%;
+}
+#main .left .lbtm h2{
+    color: rgba(202, 20, 20, 0.785);
+}
+#main .left .lbtm p{
+    color: rgba(48, 42, 42, 0.68);
+}
+#main .left .ltext h1 span{
+    font-weight: 300;
+}
+#main .left .ltext p{
+    margin-top: 15px;
+}
+#main .left .ltext button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: rgb(12, 12, 12);
+}
+#main .right {
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+}
+#main .right img:nth-child(1){
+    width: 50vw;
+    height: 45vh;
+    position: absolute;
+    top:23%;
+    left: -35%;
+    transform: rotate(-30deg);
+}
+#main .right .rtext{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: fit-content;
+}
+#main .right .rtext h1 span{
+    font-weight: 300;
+    color: black;
+}
+#main .right .rtext h1{
+    color:#EE394B ;
+}
+#main .right .rtext h2{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+#main .right .rtext h2 span{
+    font-weight: 700;
+}
+#main .right .rtext p{
+    text-align: justify;
+    width: 70%;
+    margin-bottom: 25px;
+}
+#main .right .rtext .btns{
+    display: flex;
+    gap: 20px;
+}
+#main .right .rtext .btns button{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+}
+#main .right .rtext .btns button:nth-child(1){
+    color: #EE394B;
+    font-weight: 700;
+}
+#main .right .rtext .btns button:nth-child(2){
+    color: #fff;
+    background-color:#EE394B;
+}
+#main .right .sampleImg .imgs{
+    display: flex;
+    gap: 20px;
+}
+#main .right .sampleImg .imgs img{
+    margin-top: 8px;
+    width: 50px;
+    height: 30px;
+}
+#main .right .sampleImg{
+    margin-top: 20px;
+}
+#main .right .sampleImg h2{
+    font-size: 20px;
+    font-weight: 700;
+}
