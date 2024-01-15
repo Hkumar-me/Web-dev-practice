@@ -63,7 +63,7 @@ html, body{
     background-color: #fff;
     position: relative;
 }
-#main .right img:nth-child(1){
+#main .right>img{
     width: 50vw;
     height: 45vh;
     position: absolute;

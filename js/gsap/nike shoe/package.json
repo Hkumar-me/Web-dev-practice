@@ -1,0 +1,12 @@
+{
+  "name": "myLiveServer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts":{
+    "golive":"lt --port 5500"
+  },
+  "dependencies": {
+    "localtunnel": "^2.0.2"
+  }
+}
