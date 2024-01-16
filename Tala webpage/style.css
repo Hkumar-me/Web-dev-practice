@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Yasmen;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+
+    background-color: #222;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222;
+    color: #dadada;
+}
+
+.nav {
+    width: 100%;
+    padding: 1vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 99;
+}
+
+.nav .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nav .right i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#full-screen-menu {
+    width: 100%;
+    height: 100vh;
+    background-color: #dadada;
+    color: #222;
+    position: absolute;
+    top: -100%;
+    transition: all ease .4s;
+    z-index: 98;
+}
+
+#page1 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #222;
+}
+
+#page1>h1 {
+    font-size: 17vw;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+#page1 h2 {
+    font-size: 2vw;
+    word-spacing: .2vw;
+    letter-spacing: .1vw;
+    position: absolute;
+    width: 19%;
+    top: 50%;
+    left: 40%;
+}
+
+#page1 .page1-right {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    text-transform: uppercase;
+}
+
+#page1 img {
+    margin-left: 5vw;
+    width: 90vw;
+    height: 100vh;
+    position: absolute;
+    top: 80vh;
+    transform: scale(.7);
+}
+
+#page2 {
+    width: 100%;
+    min-height: 120vh;
+    position: relative;
+}
+
+#page2 .textP2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#page2 .textP2 span {
+    font-weight: 1;
+    font-style: italic;
+}
+
+#page2 .textP2 h1 {
+    transform-origin: 100% 100%;
+    text-align: center;
+    transform: rotateX(270deg);
+}
+
+#page3 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: red;
+}
+
+#page4 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5vw;
+}
+
+#page4 h1 {
+    text-transform: uppercase;
+    font-size: 10vw;
+}
+
+#page5 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#page5 .page5-top {
+    width: 100%;
+    height: 35vh;
+    padding: 2vw;
+    display: flex;
+}
+
+#page5 .page5-top h1 {
+    padding: 1vw;
+    width: 65%;
+    height: 100%;
+    font-size: 4.5vw;
+    border: 2px solid #dadada;
+    text-transform: uppercase;
+}
+
+#page5 .page5-top h3 {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    font-size: 2vw;
+    text-transform: uppercase;
+    border-top: 2px solid #dadada;
+    border-bottom: 2px solid #dadada;
+    border-right: 2px solid #dadada;
+}
+#page5 .page5-main{
+    padding: 5vw 4vw;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+
+}
+#page5 .page5-main h1{
+    font-size: 3vw;
+    text-align: center;
+}
+#page5 .page5-main h1 span{
+    font-style: italic;
+    font-weight: 10;
+}
+#page5 .page5-main h3{
+    width:30%;
+    text-align: center;
+}
