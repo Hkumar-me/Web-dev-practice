@@ -196,3 +196,119 @@ body {
     width:30%;
     text-align: center;
 }
+#page5 .slider{
+    width: 100%;
+    min-height: 100vh;
+}
+#page5 .slider .slider1{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+#page5 .slider .slider2{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+#page5 .slider .slider1 h1{
+    font-size: 14vw;
+    text-transform: uppercase;
+    line-height: 11vw;
+    /* transform: translateX(-100%); */
+}
+#page5 .slider .slider1 h1 .one2{
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px ;
+    -webkit-text-stroke-color: #dadada;
+}
+#page5 .slider .slider2 h1 .one1{
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #dadada;
+}
+#page5 .slider .slider2 h1{
+    font-size: 14vw;
+    text-transform: uppercase;
+    line-height: 11vw;
+    transform: translateX(-1000%);
+}
+#page5 .slider .slider1::-webkit-scrollbar{
+    display: none;
+}
+#page5 .slider .slider2::-webkit-scrollbar{
+    display: none;
+}
+#page6{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page6 .p6-text{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    height: 30vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#page6 .p6-text h1{
+    font-size: 3vw;
+}
+#page6 .p6-text h1 span{
+    font-style: italic;
+    font-weight: 10;
+}
+#page6 .imgMove{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#page6 .imgMove .yesImg{
+    width: 25%;
+    height: 100%;
+    font-size: 1.5vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page6 .imgMove .yesImg h1{
+    position: relative;
+    z-index: 99;
+}
+#page6 .imgMove .noImg h1{
+    position: relative;
+    z-index: 99;
+}
+#page6 .imgMove .yesImg img{
+    width: 90%;
+    height: 120%;
+    object-fit: cover;
+    position: absolute;
+    transform:rotate(10deg);
+    opacity: 0;
+}
+#page6 .imgMove .noImg{
+    width: 25%;
+    height: 100%;
+    font-size: 1.5vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#page6 .imgMove .noImg img{
+    width: 80%;
+    height: 120%;
+    object-fit: cover;
+    position: absolute;
+    transform:rotate(10deg);
+    opacity: 0;
+}
